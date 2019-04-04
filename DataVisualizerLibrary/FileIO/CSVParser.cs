@@ -75,7 +75,6 @@ namespace DataVisualizerLibrary.FileIO
                     Unit = SplitLine[i].Substring(SplitLine[i].IndexOf("(") + 1, SplitLine[i].IndexOf(")") - SplitLine[i].IndexOf("(") - 1);
                 if(!IsDataCategory(DataCategoryModels, Unit))
                 {
-                    Console.WriteLine(SplitLine[i]);
                     DataCategoryModels.Add(new DataCategoryModel(Unit));
                 }
 

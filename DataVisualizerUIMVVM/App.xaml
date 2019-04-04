@@ -1,0 +1,21 @@
+﻿<Application x:Class="DataVisualizerUIMVVM.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:DataVisualizerUIMVVM"
+             xmlns:viewmodel="clr-namespace:DataVisualizerUIMVVM.ViewModels"
+             >
+    <Application.Resources>
+        
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <local:Bootstrapper x:Key="bootstrapper" />
+                </ResourceDictionary>
+                <ResourceDictionary>
+                    <viewmodel:LineChartViewModel x:Key="LineChartViewModel"/>
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+    
+</Application>

@@ -1,0 +1,466 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{ECA66C08-60C4-4A83-B551-FB3E44DF4DC8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>DataVisualizer</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\master" />
+    <None Include=".git\objects\01\1f6ebdc100be0108439328dc3f1585abbbc827" />
+    <None Include=".git\objects\03\3d7a5e9e2266753180f4e3a9299f575046701e" />
+    <None Include=".git\objects\04\a4991412744cd7284988986061140a243e9b0b" />
+    <None Include=".git\objects\04\a914b3d54557799903948f79b691807d71ac2e" />
+    <None Include=".git\objects\04\c4b5719a2432c7d43c5aa724cb4b61ebd04d02" />
+    <None Include=".git\objects\07\a30aed47d04ed1a54ff4cc3eae655eef4dc9bf" />
+    <None Include=".git\objects\08\8f1b12acca6913aba0d68eee212cf7078cf6df" />
+    <None Include=".git\objects\0a\43dac2c2e1b4ff21a212d89ac135bb10e45a15" />
+    <None Include=".git\objects\0d\d426cac16ff8b1d69e349aa20b2e4e15277991" />
+    <None Include=".git\objects\11\d07c63f6a8d20489467277fd469a8e22beb8ae" />
+    <None Include=".git\objects\14\6fc15d287336383fb02ef2004fea3b623bf93e" />
+    <None Include=".git\objects\18\bcb9f211bc2724101c13c29e017db0ad357aec" />
+    <None Include=".git\objects\18\d71f4a05698c75e1c93d185245d08e92bdb6f7" />
+    <None Include=".git\objects\1c\9d482171ed9205fce69dc091d5b05cee8ce2f9" />
+    <None Include=".git\objects\1d\bd7cb56b4cc6a98ca7b32890bd1143ffca8b46" />
+    <None Include=".git\objects\1e\661868ad2ba1a6b6415b9ad0024871302d960b" />
+    <None Include=".git\objects\1e\9205f83f1279124d11be6630b59562e57ad4e4" />
+    <None Include=".git\objects\1f\f0c423042b46cb1d617b81efb715defbe8054d" />
+    <None Include=".git\objects\1f\fd9befecd2f540c8927b7e50b5d6278be3a64c" />
+    <None Include=".git\objects\21\d212f7916e3cdd812f454149bc4d240bcc8595" />
+    <None Include=".git\objects\23\469ea99c4c2a0b2ef4e9a24c7e831fadcb4504" />
+    <None Include=".git\objects\25\f4e6ed3882a7d9974c6b1546b550260369f1d3" />
+    <None Include=".git\objects\2c\78f05e0b8b504803cd9a40643551300f0c2913" />
+    <None Include=".git\objects\2c\bd96b2cce95f61f9019fa48ed0cd5c7969749a" />
+    <None Include=".git\objects\30\16397668357eb7fcfa4853f107e4e4c4be27a3" />
+    <None Include=".git\objects\36\503b6bb78cb790d7d57bbe2916806bc0ce8b4a" />
+    <None Include=".git\objects\3c\4efe206bd0e7230ad0ae8396a3c883c8207906" />
+    <None Include=".git\objects\3c\b1244a6a6c3eb30ac356c696c941d6705a46e9" />
+    <None Include=".git\objects\3e\759b75bf455ac809d0987d369aab89137b5689" />
+    <None Include=".git\objects\3e\7c5a23c4b1839ef8d1db3c2edb951a85dda823" />
+    <None Include=".git\objects\44\83125f309ed55630356348d3a6caf868b043ff" />
+    <None Include=".git\objects\49\cc43e1d8f54e541889767ccf34bebecdf5255f" />
+    <None Include=".git\objects\4b\2ef002e3008f77c696e5a2f72269b4cd433afc" />
+    <None Include=".git\objects\50\45fc0e941c305ff887ba40f2cfd90d25efd83c" />
+    <None Include=".git\objects\51\a714133bb62fa64b4f482cdfcd13380fbad3ac" />
+    <None Include=".git\objects\53\6519c19adba58879eee82a86b86b5993518a8b" />
+    <None Include=".git\objects\53\ceef290267528836538bbd3d9c632397474f71" />
+    <None Include=".git\objects\5b\dc10680fbbee13977ac713a55d1a19893dfc7a" />
+    <None Include=".git\objects\5e\21c717ef56f156ee34e95e4ada5d9130cc75cb" />
+    <None Include=".git\objects\5f\cf960b03973006174a8dc19831ef3a7e8ce631" />
+    <None Include=".git\objects\61\679094bb29b351660443ac0a21bff00c5ad8bb" />
+    <None Include=".git\objects\63\75471d3dcc0c2528d53ed387b9fd82cd884819" />
+    <None Include=".git\objects\69\f85b99d2fcda0c24b157d8871a972832cd8e9b" />
+    <None Include=".git\objects\6c\b9fae5e7aca447e9ffa83ec595faaf04758b56" />
+    <None Include=".git\objects\71\063d95530cc5cedab878a8b61110b41b731a05" />
+    <None Include=".git\objects\71\9f47faac9454c6ce6a7ea2944fafe48d82896b" />
+    <None Include=".git\objects\73\1f6de6c291e303814b02808f34140fe560e8e4" />
+    <None Include=".git\objects\7d\55909b741da0f0adae6a2c3c8afe49cc58c79b" />
+    <None Include=".git\objects\86\2840e610ea81a2826c44c2df7680bcb79e40d2" />
+    <None Include=".git\objects\8b\d53fc4cc99ea1a49c0b03dbb0ede1628c773e9" />
+    <None Include=".git\objects\8e\77276e1b9a62eef949b965e68461976c7f99ae" />
+    <None Include=".git\objects\8e\ad38918d4f4e41a9d8180dff9134b8cce54de7" />
+    <None Include=".git\objects\90\1c460a6aeb163416e7757ffa10016430938b61" />
+    <None Include=".git\objects\91\e3470e1645e6e8d0de6fe9f6b242f366e9a393" />
+    <None Include=".git\objects\93\043fe7cb8b1daa5e3710876e7c6f30072ca99a" />
+    <None Include=".git\objects\93\3320752a186dc4de5ef04b611f68b2b9d8584c" />
+    <None Include=".git\objects\94\4f499304d6043ba67a24beffbcd6824c35a4f2" />
+    <None Include=".git\objects\99\a07c86b9da39f98888dcb555ed4dc956ff34f0" />
+    <None Include=".git\objects\9b\02802918805fa842b395f74677831f2f29a40e" />
+    <None Include=".git\objects\9c\14a0273e114c8906c3b76b6bb34c8656c149bc" />
+    <None Include=".git\objects\9c\50b07617f7bd0ad0290357ab194343b4719900" />
+    <None Include=".git\objects\9c\9492ae432744c7e5e43d34717d2e7bb69108db" />
+    <None Include=".git\objects\9e\0d6f3a50ff10dab30cda874c6e411c1502f0c9" />
+    <None Include=".git\objects\a0\096ce9c22dfbb6774707e104e4c1cb5c11f1cd" />
+    <None Include=".git\objects\a0\3e3ea20672eb9c4f6d0a65b92f14648107a56f" />
+    <None Include=".git\objects\a0\e5dec50c598c343090241921054c0580e550d8" />
+    <None Include=".git\objects\a4\0e89cfe43a46a37e17155a321e47a34253dd0d" />
+    <None Include=".git\objects\a4\0fd520c3e1efabbd4406bd36a618a311d60f25" />
+    <None Include=".git\objects\a4\69a772cefb3005e5f600174f4a65492969d612" />
+    <None Include=".git\objects\a9\f966befa6daee45855898158911375d2e15a96" />
+    <None Include=".git\objects\ad\f853340c1e42210881789462f3dc5248a8b6a5" />
+    <None Include=".git\objects\af\7dbebbacef595e3089c01c05671016c21a8304" />
+    <None Include=".git\objects\b0\3fcb141d11d4a80fe6680c50724ee2ad9020c7" />
+    <None Include=".git\objects\b1\1293fd7dff203befeed4da8ddd168549ee53a5" />
+    <None Include=".git\objects\b2\457566b917029fe5a8ca0eeed5a119cfa7b41e" />
+    <None Include=".git\objects\b2\cbcea1d545fc041ddd45515e341078252fc88f" />
+    <None Include=".git\objects\b5\107a9f76d6581e713036fce1b479425dd21ded" />
+    <None Include=".git\objects\b7\51411aef470524fe81be0bc702be011a0deb29" />
+    <None Include=".git\objects\b9\f9e50beeec5a8a16179b605423edd7859ec37b" />
+    <None Include=".git\objects\bb\1f464bb353064333da4a04d699f7e7e40cf24b" />
+    <None Include=".git\objects\bb\ce65d217bc67f960ef4648b5b8f3d76797bb62" />
+    <None Include=".git\objects\bc\10b4096c75c2af4c4cb0c5ae4eba428e7707ab" />
+    <None Include=".git\objects\bc\196d112ac17789d9db9f4e91ed297c24eebd8e" />
+    <None Include=".git\objects\bc\7fd842328b5a33c0c1d2ed452db9375fa85d35" />
+    <None Include=".git\objects\bc\b99c24f631ffd79e3c621f8bbc1bdb57c863e0" />
+    <None Include=".git\objects\bd\380f22d213833433e0441dbd92f0e3fd2f9013" />
+    <None Include=".git\objects\bd\78b2541a9e40c6210099c90d576b781662e1f2" />
+    <None Include=".git\objects\c6\aad0d92f025471d3b73bc8c9150462c60d5521" />
+    <None Include=".git\objects\dc\58ee5c81d9fd8af21e5e1e023f8ce14c22de4e" />
+    <None Include=".git\objects\dd\14f868afcb28a7a42d7e7a04dcd6f32086a968" />
+    <None Include=".git\objects\e2\7c280d9efe22bbdbc44248cab8c6fd7e9622ae" />
+    <None Include=".git\objects\e9\46c2e34c90c24edbc03c2c53f8e1e8d7e7bee0" />
+    <None Include=".git\objects\ea\fecb29852c6b81e0354869088937d41e38662d" />
+    <None Include=".git\objects\eb\754a0e9a139a3242174d06d32758ef0f806bc2" />
+    <None Include=".git\objects\ec\989d6ddf7dd7cc15d3c94a03ef7321a4526cf2" />
+    <None Include=".git\objects\ed\50361728f37e2145656e26f5e39efc4e0aa663" />
+    <None Include=".git\objects\ee\c06cce989019cb1ed49d22c2c2511d74e94470" />
+    <None Include=".git\objects\ef\b54ebff1d19f62a9c97749cb7b66af32e70f45" />
+    <None Include=".git\objects\f1\8adb08cc6832019bd54db9bdb40627bdbdfda7" />
+    <None Include=".git\objects\f3\77b55cff7ba51f7e205154504e2737ff26c873" />
+    <None Include=".git\objects\f3\b29891f3a8f4f2a08716d1c2f705f461c43bcc" />
+    <None Include=".git\objects\f8\be2b75aa5b5cefdd10844d50b56d9028fa343d" />
+    <None Include=".git\objects\f9\924040c7d8429241bc04afefac891e3ba00806" />
+    <None Include=".git\objects\fa\8e82f414358816b312a67fd9ea0260f818ccc9" />
+    <None Include=".git\objects\fc\e96e2cb28e0089d17c0a161d4fd9ce3fedd868" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\master" />
+    <None Include=".vs\DataVisualizerUI\v15\.suo" />
+    <None Include=".vs\DataVisualizer\v15\.suo" />
+    <None Include=".vs\DataVisualizer\v15\Server\sqlite3\db.lock" />
+    <None Include=".vs\DataVisualizer\v15\Server\sqlite3\storage.ide" />
+    <None Include=".vs\DataVisualizer\v15\Server\sqlite3\storage.ide-shm" />
+    <None Include=".vs\DataVisualizer\v15\Server\sqlite3\storage.ide-wal" />
+    <None Include="DataVisualizerLibrary\obj\Debug\DataVisualizerLibrary.csproj.CopyComplete" />
+    <None Include="DataVisualizerLibrary\obj\Debug\DataVisualizerLibrary.csproj.CoreCompileInputs.cache" />
+    <None Include="DataVisualizerLibrary\obj\Debug\DataVisualizerLibrary.csprojAssemblyReference.cache" />
+    <None Include="DataVisualizerLibrary\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="DataVisualizerLibrary\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="DataVisualizerLibrary\packages.config" />
+    <None Include="DataVisualizerUI\App.config" />
+    <None Include="DataVisualizerUI\bin\Debug\DataVisualizerUI.exe.config" />
+    <None Include="DataVisualizerUI\obj\Debug\DataVisualizerUI.csproj.CopyComplete" />
+    <None Include="DataVisualizerUI\obj\Debug\DataVisualizerUI.csproj.CoreCompileInputs.cache" />
+    <None Include="DataVisualizerUI\obj\Debug\DataVisualizerUI.csproj.GenerateResource.cache" />
+    <None Include="DataVisualizerUI\obj\Debug\DataVisualizerUI.csprojAssemblyReference.cache" />
+    <None Include="DataVisualizerUI\obj\Debug\DataVisualizerUI_MarkupCompile.cache" />
+    <None Include="DataVisualizerUI\obj\Debug\DataVisualizerUI_MarkupCompile.i.cache" />
+    <None Include="DataVisualizerUI\obj\Debug\DataVisualizerUI_MarkupCompile.lref" />
+    <None Include="DataVisualizerUI\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="DataVisualizerUI\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="DataVisualizerUI\obj\Debug\MainWindow.baml" />
+    <None Include="DataVisualizerUI\obj\Debug\UserControls\LineDiagram.baml" />
+    <None Include="DataVisualizerUI\obj\Debug\UserControls\MenuControl.baml" />
+    <None Include="DataVisualizerUI\obj\Debug\UserControls\ToggleButtonControl.baml" />
+    <None Include="DataVisualizerUI\packages.config" />
+    <None Include="DataVisualizerUI\Properties\Settings.settings" />
+    <None Include="Example.csv" />
+    <None Include="packages\Caliburn.Micro.3.2.0\.signature.p7s" />
+    <None Include="packages\Caliburn.Micro.3.2.0\Caliburn.Micro.3.2.0.nupkg" />
+    <None Include="packages\Caliburn.Micro.3.2.0\lib\uap10.0\Caliburn.Micro.Platform.UWP.pri" />
+    <None Include="packages\Caliburn.Micro.3.2.0\lib\win81\Caliburn.Micro.Platform.pri" />
+    <None Include="packages\Caliburn.Micro.3.2.0\lib\wpa81\Caliburn.Micro.Platform.pri" />
+    <None Include="packages\Caliburn.Micro.Core.3.2.0\.signature.p7s" />
+    <None Include="packages\Caliburn.Micro.Core.3.2.0\Caliburn.Micro.Core.3.2.0.nupkg" />
+    <None Include="packages\CsvHelper.12.1.2\.signature.p7s" />
+    <None Include="packages\CsvHelper.12.1.2\CsvHelper.12.1.2.nupkg" />
+    <None Include="packages\LiveCharts.0.9.7\.signature.p7s" />
+    <None Include="packages\LiveCharts.0.9.7\LiveCharts.0.9.7.nupkg" />
+    <None Include="packages\LiveCharts.Wpf.0.9.7\.signature.p7s" />
+    <None Include="packages\LiveCharts.Wpf.0.9.7\LiveCharts.Wpf.0.9.7.nupkg" />
+    <None Include="packages\LiveCharts.Wpf.0.9.7\tools\install.ps1" />
+    <None Include="packages\System.ValueTuple.4.4.0\.signature.p7s" />
+    <None Include="packages\System.ValueTuple.4.4.0\lib\MonoAndroid10\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\lib\MonoTouch10\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\lib\netcoreapp2.0\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\lib\netstandard2.0\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\lib\xamarinios10\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\lib\xamarinmac20\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\lib\xamarintvos10\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\lib\xamarinwatchos10\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\ref\MonoAndroid10\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\ref\MonoTouch10\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\ref\netcoreapp2.0\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\ref\netstandard2.0\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\ref\xamarinios10\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\ref\xamarinmac20\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\ref\xamarintvos10\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\ref\xamarinwatchos10\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\System.ValueTuple.4.4.0.nupkg" />
+    <None Include="UnitlessExample.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".git\ms-persist.xml" />
+    <Content Include="DataVisualizerLibrary\bin\Debug\CsvHelper.dll" />
+    <Content Include="DataVisualizerLibrary\bin\Debug\CsvHelper.xml" />
+    <Content Include="DataVisualizerLibrary\bin\Debug\DataVisualizerLibrary.dll" />
+    <Content Include="DataVisualizerLibrary\bin\Debug\DataVisualizerLibrary.pdb" />
+    <Content Include="DataVisualizerLibrary\bin\Debug\System.ValueTuple.dll" />
+    <Content Include="DataVisualizerLibrary\bin\Debug\System.ValueTuple.xml" />
+    <Content Include="DataVisualizerLibrary\DataVisualizerLibrary.csproj" />
+    <Content Include="DataVisualizerLibrary\obj\Debug\DataVisualizerLibrary.csproj.FileListAbsolute.txt" />
+    <Content Include="DataVisualizerLibrary\obj\Debug\DataVisualizerLibrary.dll" />
+    <Content Include="DataVisualizerLibrary\obj\Debug\DataVisualizerLibrary.pdb" />
+    <Content Include="DataVisualizerUI\bin\Debug\CsvHelper.dll" />
+    <Content Include="DataVisualizerUI\bin\Debug\CsvHelper.xml" />
+    <Content Include="DataVisualizerUI\bin\Debug\DataVisualizerLibrary.dll" />
+    <Content Include="DataVisualizerUI\bin\Debug\DataVisualizerLibrary.pdb" />
+    <Content Include="DataVisualizerUI\bin\Debug\DataVisualizerUI.exe" />
+    <Content Include="DataVisualizerUI\bin\Debug\DataVisualizerUI.pdb" />
+    <Content Include="DataVisualizerUI\bin\Debug\LiveCharts.dll" />
+    <Content Include="DataVisualizerUI\bin\Debug\LiveCharts.pdb" />
+    <Content Include="DataVisualizerUI\bin\Debug\LiveCharts.Wpf.dll" />
+    <Content Include="DataVisualizerUI\bin\Debug\LiveCharts.Wpf.pdb" />
+    <Content Include="DataVisualizerUI\bin\Debug\LiveCharts.Wpf.xml" />
+    <Content Include="DataVisualizerUI\bin\Debug\LiveCharts.xml" />
+    <Content Include="DataVisualizerUI\bin\Debug\System.ValueTuple.dll" />
+    <Content Include="DataVisualizerUI\bin\Debug\System.ValueTuple.xml" />
+    <Content Include="DataVisualizerUI\DataVisualizerUI.csproj" />
+    <Content Include="DataVisualizerUI\DataVisualizerUI.sln" />
+    <Content Include="DataVisualizerUI\obj\Debug\DataVisualizerUI.csproj.FileListAbsolute.txt" />
+    <Content Include="DataVisualizerUI\obj\Debug\DataVisualizerUI.exe" />
+    <Content Include="DataVisualizerUI\obj\Debug\DataVisualizerUI.pdb" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\MonoAndroid10\Caliburn.Micro.Platform.Core.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\MonoAndroid10\Caliburn.Micro.Platform.Core.xml" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\MonoAndroid10\Caliburn.Micro.Platform.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\MonoAndroid10\Caliburn.Micro.Platform.xml" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\MonoTouch10\Caliburn.Micro.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\MonoTouch10\Caliburn.Micro.Platform.Core.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\MonoTouch10\Caliburn.Micro.Platform.Core.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\MonoTouch10\Caliburn.Micro.Platform.Core.xml" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\MonoTouch10\Caliburn.Micro.Platform.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\MonoTouch10\Caliburn.Micro.Platform.xml" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\net40\Caliburn.Micro.Platform.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\net40\Caliburn.Micro.Platform.xml" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\net40\System.Windows.Interactivity.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\net40\System.Windows.Interactivity.xml" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\net45\Caliburn.Micro.Platform.Core.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\net45\Caliburn.Micro.Platform.Core.xml" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\net45\Caliburn.Micro.Platform.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\net45\Caliburn.Micro.Platform.xml" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\net45\System.Windows.Interactivity.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\sl5\Caliburn.Micro.Platform.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\sl5\Caliburn.Micro.Platform.xml" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\sl5\System.Windows.Interactivity.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\uap10.0\Caliburn.Micro.Platform.Core.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\uap10.0\Caliburn.Micro.Platform.Core.xml" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\uap10.0\Caliburn.Micro.Platform.UWP.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\uap10.0\Caliburn.Micro.Platform.UWP.XML" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\uap10.0\Caliburn.Micro.Platform.UWP\Properties\Caliburn.Micro.Platform.UWP.rd.xml" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\win81\Caliburn.Micro.Platform.Core.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\win81\Caliburn.Micro.Platform.Core.xml" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\win81\Caliburn.Micro.Platform.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\win81\Caliburn.Micro.Platform.XML" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\win81\Microsoft.Xaml.Interactions.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\win81\Microsoft.Xaml.Interactivity.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\wp8\Caliburn.Micro.Platform.Core.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\wp8\Caliburn.Micro.Platform.Core.xml" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\wp8\Caliburn.Micro.Platform.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\wp8\Caliburn.Micro.Platform.xml" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\wp8\System.Windows.Interactivity.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\wpa81\Caliburn.Micro.Platform.Core.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\wpa81\Caliburn.Micro.Platform.Core.xml" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\wpa81\Caliburn.Micro.Platform.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\wpa81\Caliburn.Micro.Platform.xml" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\wpa81\Microsoft.Xaml.Interactions.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\wpa81\Microsoft.Xaml.Interactivity.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\Xamarin.iOS10\Caliburn.Micro.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\Xamarin.iOS10\Caliburn.Micro.Platform.Core.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\Xamarin.iOS10\Caliburn.Micro.Platform.Core.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\Xamarin.iOS10\Caliburn.Micro.Platform.Core.xml" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\Xamarin.iOS10\Caliburn.Micro.Platform.dll" />
+    <Content Include="packages\Caliburn.Micro.3.2.0\lib\Xamarin.iOS10\Caliburn.Micro.Platform.xml" />
+    <Content Include="packages\Caliburn.Micro.Core.3.2.0\lib\net40\Caliburn.Micro.dll" />
+    <Content Include="packages\Caliburn.Micro.Core.3.2.0\lib\net40\Caliburn.Micro.XML" />
+    <Content Include="packages\Caliburn.Micro.Core.3.2.0\lib\net45\Caliburn.Micro.dll" />
+    <Content Include="packages\Caliburn.Micro.Core.3.2.0\lib\net45\Caliburn.Micro.xml" />
+    <Content Include="packages\Caliburn.Micro.Core.3.2.0\lib\portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0\Caliburn.Micro.dll" />
+    <Content Include="packages\Caliburn.Micro.Core.3.2.0\lib\portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0\Caliburn.Micro.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="packages\Caliburn.Micro.Core.3.2.0\lib\portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0\Caliburn.Micro.XML" />
+    <Content Include="packages\Caliburn.Micro.Core.3.2.0\lib\sl5\Caliburn.Micro.dll" />
+    <Content Include="packages\Caliburn.Micro.Core.3.2.0\lib\sl5\Caliburn.Micro.XML" />
+    <Content Include="packages\CsvHelper.12.1.2\lib\net45\CsvHelper.dll" />
+    <Content Include="packages\CsvHelper.12.1.2\lib\net45\CsvHelper.xml" />
+    <Content Include="packages\CsvHelper.12.1.2\lib\netstandard2.0\CsvHelper.dll" />
+    <Content Include="packages\CsvHelper.12.1.2\lib\netstandard2.0\CsvHelper.xml" />
+    <Content Include="packages\LiveCharts.0.9.7\lib\net40\LiveCharts.dll" />
+    <Content Include="packages\LiveCharts.0.9.7\lib\net40\LiveCharts.pdb" />
+    <Content Include="packages\LiveCharts.0.9.7\lib\net40\LiveCharts.xml" />
+    <Content Include="packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll" />
+    <Content Include="packages\LiveCharts.0.9.7\lib\net45\LiveCharts.pdb" />
+    <Content Include="packages\LiveCharts.0.9.7\lib\net45\LiveCharts.xml" />
+    <Content Include="packages\LiveCharts.0.9.7\lib\portable-net45+win8+wp8\LiveCharts.dll" />
+    <Content Include="packages\LiveCharts.0.9.7\lib\portable-net45+win8+wp8\LiveCharts.pdb" />
+    <Content Include="packages\LiveCharts.0.9.7\lib\portable-net45+win8+wp8\LiveCharts.XML" />
+    <Content Include="packages\LiveCharts.0.9.7\readme.txt" />
+    <Content Include="packages\LiveCharts.Wpf.0.9.7\lib\net40\LiveCharts.Wpf.dll" />
+    <Content Include="packages\LiveCharts.Wpf.0.9.7\lib\net40\LiveCharts.Wpf.pdb" />
+    <Content Include="packages\LiveCharts.Wpf.0.9.7\lib\net40\LiveCharts.Wpf.XML" />
+    <Content Include="packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll" />
+    <Content Include="packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.pdb" />
+    <Content Include="packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.XML" />
+    <Content Include="packages\System.ValueTuple.4.4.0\lib\net461\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.4.0\lib\net461\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.4.0\lib\net47\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.4.0\lib\net47\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.4.0\lib\netstandard1.0\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.4.0\lib\netstandard1.0\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.4.0\lib\portable-net40+sl4+win8+wp8\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.4.0\lib\portable-net40+sl4+win8+wp8\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.4.0\LICENSE.TXT" />
+    <Content Include="packages\System.ValueTuple.4.4.0\ref\net461\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.4.0\ref\net461\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.4.0\ref\net47\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.4.0\ref\net47\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.4.0\ref\portable-net40+sl4+win8+wp8\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.4.0\ref\portable-net40+sl4+win8+wp8\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.4.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.ValueTuple.4.4.0\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.ValueTuple.4.4.0\version.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataVisualizerLibrary\FileIO\CSVParser.cs" />
+    <Compile Include="DataVisualizerLibrary\FileIO\IParser.cs" />
+    <Compile Include="DataVisualizerLibrary\FileIO\JSONParser.cs" />
+    <Compile Include="DataVisualizerLibrary\Models\DataCategoryModel.cs" />
+    <Compile Include="DataVisualizerLibrary\Models\DataModel.cs" />
+    <Compile Include="DataVisualizerLibrary\Models\DataPointModel.cs" />
+    <Compile Include="DataVisualizerLibrary\Models\DataSetModel.cs" />
+    <Compile Include="DataVisualizerLibrary\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="DataVisualizerLibrary\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="DataVisualizerLibrary\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="DataVisualizerLibrary\Properties\AssemblyInfo.cs" />
+    <Compile Include="DataVisualizerUI\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataVisualizerUI\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataVisualizerUI\obj\Debug\App.g.cs" />
+    <Compile Include="DataVisualizerUI\obj\Debug\App.g.i.cs" />
+    <Compile Include="DataVisualizerUI\obj\Debug\GeneratedInternalTypeHelper.g.cs" />
+    <Compile Include="DataVisualizerUI\obj\Debug\GeneratedInternalTypeHelper.g.i.cs" />
+    <Compile Include="DataVisualizerUI\obj\Debug\MainWindow.g.cs" />
+    <Compile Include="DataVisualizerUI\obj\Debug\MainWindow.g.i.cs" />
+    <Compile Include="DataVisualizerUI\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="DataVisualizerUI\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="DataVisualizerUI\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="DataVisualizerUI\obj\Debug\UserControls\ButtonControl.g.i.cs" />
+    <Compile Include="DataVisualizerUI\obj\Debug\UserControls\LineDiagram.g.cs" />
+    <Compile Include="DataVisualizerUI\obj\Debug\UserControls\LineDiagram.g.i.cs" />
+    <Compile Include="DataVisualizerUI\obj\Debug\UserControls\MenuControl.g.cs" />
+    <Compile Include="DataVisualizerUI\obj\Debug\UserControls\MenuControl.g.i.cs" />
+    <Compile Include="DataVisualizerUI\obj\Debug\UserControls\ToggleButtonControl.g.cs" />
+    <Compile Include="DataVisualizerUI\obj\Debug\UserControls\ToggleButtonControl.g.i.cs" />
+    <Compile Include="DataVisualizerUI\Properties\AssemblyInfo.cs" />
+    <Compile Include="DataVisualizerUI\Properties\Resources.Designer.cs" />
+    <Compile Include="DataVisualizerUI\Properties\Settings.Designer.cs" />
+    <Compile Include="DataVisualizerUI\UserControls\LineDiagram.xaml.cs">
+      <DependentUpon>LineDiagram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataVisualizerUI\UserControls\MenuControl.xaml.cs">
+      <DependentUpon>MenuControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataVisualizerUI\UserControls\ToggleButtonControl.xaml.cs">
+      <DependentUpon>ToggleButtonControl.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="DataVisualizerUI\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DataVisualizerUI\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DataVisualizerUI\UserControls\LineDiagram.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DataVisualizerUI\UserControls\MenuControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DataVisualizerUI\UserControls\ToggleButtonControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DataVisualizerUI\obj\Debug\DataVisualizerUI.g.resources" />
+    <EmbeddedResource Include="DataVisualizerUI\obj\Debug\DataVisualizerUI.Properties.Resources.resources" />
+    <EmbeddedResource Include="DataVisualizerUI\Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\DataVisualiser\v15\Server\sqlite3\" />
+    <Folder Include=".vs\FitnessTracker\v15\Server\sqlite3\" />
+    <Folder Include="DataVisualizerLibrary\bin\Release\" />
+    <Folder Include="DataVisualizerLibrary\obj\Debug\TempPE\" />
+    <Folder Include="DataVisualizerUI\bin\Release\" />
+    <Folder Include="DataVisualizerUI\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="DataVisualizerUIMVVM.Views.LineChartView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:cal="http://www.caliburnproject.org"
+             cal:Bind.Model="{Binding}"
+             xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             xmlns:local="clr-namespace:DataVisualizerUIMVVM.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             DataContext="{StaticResource LineChartViewModel}">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <lvc:CartesianChart  Series="{Binding SeriesCollection}" AxisY="{Binding AxesY}" Grid.Row="2">
+            <lvc:CartesianChart.AxisX>
+                <lvc:Axis LabelFormatter="{Binding Formatter}"></lvc:Axis>
+            </lvc:CartesianChart.AxisX>
+        </lvc:CartesianChart>
+        
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem x:Name="OpenFile" Header="_Open" cal:Message.Attach="OpenFile" />
+                </MenuItem>
+            </Menu>
+           
+        </DockPanel>
+        
+    </Grid>
+</UserControl>

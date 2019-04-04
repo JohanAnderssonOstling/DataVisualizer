@@ -20,5 +20,6 @@ namespace DataVisualizerLibrary.Models
         {
             Name = name;
         }
+        
     }
 }
